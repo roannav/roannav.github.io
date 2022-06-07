@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>{{ page.title }}</title>
+  <title>{{ page.title }} | Roanna Victorio's Blog</title>
   <link href="/css/styles.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -16,7 +16,7 @@
 
     {{ content }}
 
-    <h4>Read my posts:</h4>
+    <h4>Posts</h4>
     <ul>
       {% for post in site.posts %}
         <li>
@@ -24,6 +24,19 @@
         </li>
       {% endfor %}
     </ul>
+
+
+    <h4>Pages</h4>
+    <ul>
+      {% for page in site.pages %}
+        <li>
+          <a href="{{ page.url }}">{{ page.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+
+
     <footer>Have a nice day!</footer>
   </div>
 </body>
