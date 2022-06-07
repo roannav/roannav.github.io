@@ -1,3 +1,10 @@
+nav a {
+  /* For the navigation bar, */
+  /* don't change color to purple, after visiting */
+  color: #0000EE;
+  padding-right: 10px;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -5,12 +12,12 @@
 
 body {
   width: 100%;
-  max-width: 1000px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.large_picture {
+img.large_picture {
   display: block;
   width: 384px;
   margin: 50px auto;
@@ -20,9 +27,28 @@ p {
   display: block;
   width: 400px;
   margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  font: 16px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+}
+
+p.date {
+  font: 20px Arial;
+}
+
+h1 {
+  /*font-size: 30px; */
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+h4 {
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 footer {
-  padding-top: 15px;
+  background-color: blue;
+  color: white;
+  margin-top: 15px;
+  padding-top: 10px;
+  padding-left: 10px;
 }
