@@ -12,22 +12,22 @@ nav a {
 
 body {
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
 
 img.large_picture {
   display: block;
-  width: 384px;
+  width: 400px;
   margin: 50px auto;
 }
 
 p {
   display: block;
-  width: 400px;
+  width: 500px;
   margin: 50px auto;
-  font: 16px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  font: 16px Lato;
 }
 
 p.date {
@@ -35,7 +35,6 @@ p.date {
 }
 
 h1 {
-  /*font-size: 30px; */
   padding-top: 20px;
   padding-bottom: 15px;
 }
