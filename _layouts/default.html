@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>{{ page.title }}</title>
+  <link href="/css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="content">
+    <nav>
+      <a href="/index.htm">Home</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+
+    {{ content }}
+
+    <h4>Read my posts:</h4>
+    <ul>
+      {% for post in site.posts %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    <footer>Have a nice day!</footer>
+  </div>
+</body>
+</html>

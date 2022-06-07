@@ -3,6 +3,13 @@
   padding: 0px;
 }
 
+body {
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .large_picture {
   display: block;
   width: 384px;
@@ -14,4 +21,8 @@ p {
   width: 400px;
   margin: 50px auto;
   font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+}
+
+footer {
+  padding-top: 15px;
 }
