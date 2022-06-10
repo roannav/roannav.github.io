@@ -5,10 +5,12 @@ nav a {
   padding-right: 10px;
 }
 
+/*
 * {
   margin: 0px;
   padding: 0px;
 }
+*/
 
 body {
   width: 100%;
@@ -32,6 +34,13 @@ p {
 
 p.date {
   font: 20px Arial;
+}
+
+ul, ol {
+  display: block;
+  width: 500px;
+  margin: 50px auto;
+  font: 16px Lato;
 }
 
 h1 {
