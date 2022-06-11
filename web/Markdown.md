@@ -46,6 +46,48 @@ Or use &lt;br&gt; to create a line break.
 
 `code`
 
+Code blocks are indented 4 space or 1 tab.
+If the code block is inside a list, then indent by 8 spaces or 2 tabs.
+
+    if True:
+        print("Hello, World!")
+
+<hr>
+## Blockquotes
+
+
+>
+> ## Header
+>
+> Make sure to put blank lines before and after blockquotes.
+>
+>> Nested blockquotes
+>
+
+<hr>
+
+## Lists
+
+### Ordered Lists
+1. first
+2. second
+3. third
+
+### Unordered List
+- first
+
+    This is indented by 1 tab or 4 spaces.
+
+- second
+    - nested item
+- third
+
+    > This is an indented blockquote.
+
+Can use -, +, or * as the symbol for a list item.
+
+
+
 <hr>
 ## Extended Markdown Syntax
 (Not available everywhere)
