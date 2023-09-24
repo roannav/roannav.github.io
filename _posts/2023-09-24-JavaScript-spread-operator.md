@@ -1,3 +1,8 @@
+---
+layout: default
+title: The Spread Operator in JavaScript 
+---
+
 # The Spread Operator in JavaScript
 
 `...` was a new feature in ES6.
