@@ -9,6 +9,8 @@ Start the server: `jekyll serve`<br>
 It will automatically rebuild the website, putting the files into \_site, whenever you save a change to your files.<br>
 This command works, when you don't have a Gemfile.
 
+Better yet, start the server AND make the browser refresh every time you make an edit to a file: `jekyll serve --livereload`
+
 Stop the server: `Ctrl - C`
 
 Start over (delete cache and the \_site folder, which contains the generated website files):<br>
