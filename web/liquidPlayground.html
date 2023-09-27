@@ -1,0 +1,66 @@
+---
+title: Liquid Playground 
+---
+
+<!-- # front matter tells Jekyll to process Liquid  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ "Document" | upcase }}</title>
+</head>
+<body>
+  <h4>Read more about Liquid:</h4>
+  <ul>
+    <li><a href="https://jekyllrb.com/docs/step-by-step/02-liquid/">Liquid intro at jekyllrb.com</a></li>
+    <li><a href="https://jekyllrb.com/docs/variables/">Liquid variables</a></li>
+    <li><a href="https://jekyllrb.com/docs/liquid/tags/">Liquid tags, syntax highlighting, and links to posts or pages</a></li>
+    
+  </ul>
+  
+  {% if true %}
+    <p>cat</p>
+  {% endif %} 
+
+  {% if false %}
+    <p>dog</p>
+  {% endif %} 
+
+  <h4>All posts</h4>
+  <!-- site.posts is a reverse chronological list of all Posts. -->
+  <ul>
+    {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <p>Here's the page title: {{ page.title }}</p>
+  <p>Put variables in <code>{% raw %}{{ }}{% endraw %}</code></p>
+  <p> <code>{% raw %}{{ }}{% endraw %}</code> indicate an object </p>
+  <p>The current time is {{site.time}}</p>
+
+  <div>
+
+{% highlight md %}
+```
+const array1 = ['a', 'b', 'c'];
+const array2 = ['c', 'd'];
+
+const combinedArray = [...array1, ...array2];
+console.log(combinedArray);
+```
+{% endhighlight %}
+
+{% highlight js linenos %}
+const array1 = ['a', 'b', 'c'];
+const array2 = ['c', 'd'];
+
+const combinedArray = [...array1, ...array2];
+console.log(combinedArray);
+{% endhighlight %}
+  </div>
+</body>
+</html>
